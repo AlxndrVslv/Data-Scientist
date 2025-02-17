@@ -1,0 +1,13 @@
+- сохранение результата в текстовый файл (это Action или Transformation?): 
+saveAsTextFile(Path) - Action;
+
+- получение первых n-элементов массива (Action или Transformation?):
+take(n) - Action;
+
+- объединение двух RDD в один (Action или Transformation?)
+union - Transformation;
+
+- в чем разница между Reduce и CoGroup-операторами (Action или Transformation?)
+Оператор reduce выполняет агрегацию данных, объединяя их в одно значение для каждого ключа. 
+В то время как оператор cogroup объединяет данные из нескольких RDD или Dataset по ключу и возвращает набор пар ключ-значение.
+Reduce - Action; CoGroup - Transformation.
